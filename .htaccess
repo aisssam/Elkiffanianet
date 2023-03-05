@@ -6,11 +6,11 @@
 <IfModule mod_rewrite.c>
 RewriteEngine On
 RewriteRule .* - [E=HTTPS_AUTHORIZATION:%{HTTPS:Authorization}]
-RewriteBase /Elkiffanianet/
+RewriteBase /
 RewriteRule ^index\.php$ - [L]
 RewriteCond %{REQUEST_FILENAME} !-f
 RewriteCond %{REQUEST_FILENAME} !-d
-RewriteRule . /Elkiffanianet/index.php [L]
+RewriteRule . /index.php [L]
 </IfModule>
 
 # END WordPress
